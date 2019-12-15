@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="0">
+<testcase classname="feature to login" name="user tries to login in to page scenario" time="0">
+<skipped><![CDATA[Given user opens browser with url...........................................undefined
+Then user enters "surajp" as "username" and "suraj@1995" as "password" in "login" page.undefined
+Then user clicks on "login_button" in "login" page..........................undefined
+Then user validates "title" as "CRMPRO  - CRM software for customer relationship management, sales, and support." in "home" page.undefined
+Then user validates "userNameLabel" as "User: padmanabhuni suraj" in "home" page.undefined
+]]></skipped>
+</testcase>
+</testsuite>

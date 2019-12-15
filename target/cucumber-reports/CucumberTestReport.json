@@ -1,0 +1,173 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9854825300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "user tries to login in to page scenario",
+        "description": "",
+        "id": "feature-to-login;user-tries-to-login-in-to-page-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 701787500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 688722500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3589947500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens browser with url",
+            "match": {
+              "location": "GeneralSteps.openUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 375362100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters \"surajp\" as \"username\" and \"suraj@1995\" as \"password\" in \"login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "surajp",
+                  "offset": 13
+                },
+                {
+                  "val": "username",
+                  "offset": 25
+                },
+                {
+                  "val": "suraj@1995",
+                  "offset": 40
+                },
+                {
+                  "val": "password",
+                  "offset": 56
+                },
+                {
+                  "val": "login",
+                  "offset": 70
+                }
+              ],
+              "location": "GeneralSteps.validateLogin(String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5792413900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on \"login_button\" in \"login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "login_button",
+                  "offset": 16
+                },
+                {
+                  "val": "login",
+                  "offset": 34
+                }
+              ],
+              "location": "GeneralSteps.clickMethod(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61786500,
+              "error_message": "java.lang.AssertionError: expected [CRMPRO  - CRM software for customer relationship management, sales, and support.] but found []\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\r\n\tat org.testng.Assert.assertEquals(Assert.java:116)\r\n\tat org.testng.Assert.assertEquals(Assert.java:190)\r\n\tat org.testng.Assert.assertEquals(Assert.java:200)\r\n\tat stepDefinitions.GeneralSteps.validateMethod(GeneralSteps.java:38)\r\n\tat ✽.Then user validates \"title\" as \"CRMPRO  - CRM software for customer relationship management, sales, and support.\" in \"home\" page(login.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "user validates \"title\" as \"CRMPRO  - CRM software for customer relationship management, sales, and support.\" in \"home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "title",
+                  "offset": 16
+                },
+                {
+                  "val": "CRMPRO  - CRM software for customer relationship management, sales, and support.",
+                  "offset": 27
+                },
+                {
+                  "val": "home",
+                  "offset": 113
+                }
+              ],
+              "location": "GeneralSteps.validateMethod(String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user validates \"userNameLabel\" as \"User: padmanabhuni suraj\" in \"home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "userNameLabel",
+                  "offset": 16
+                },
+                {
+                  "val": "User: padmanabhuni suraj",
+                  "offset": 35
+                },
+                {
+                  "val": "home",
+                  "offset": 65
+                }
+              ],
+              "location": "GeneralSteps.validateMethod(String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to login",
+    "description": "",
+    "id": "feature-to-login",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
