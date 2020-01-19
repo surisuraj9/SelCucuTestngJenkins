@@ -27,7 +27,7 @@ public class TestUtil extends TestBase{
 	static Sheet sheet;
 	public static WebElement element;
 	
-	public void switchToFrame() {
+	public static void switchToFrame() {
 		driver.switchTo().frame(driver.findElement(By.xpath("//frame[@name='mainpanel']")));
 	}
 

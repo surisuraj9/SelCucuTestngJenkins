@@ -35,6 +35,7 @@ public class GeneralSteps extends TestBase {
 	
 	@Then("^user validates \"([^\"]*)\" as \"([^\"]*)\" in \"([^\"]*)\" page$")
 	public void validateMethod(String elementName,String value,String pageName){
+		TestUtil.switchToFrame();
 		Assert.assertEquals(TestUtil.getPageDescriptor(elementName, pageName).getText(), value);
 	}
 
