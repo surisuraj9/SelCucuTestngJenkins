@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 9854825300,
+  "duration": 15319876000,
   "status": "passed"
 });
 formatter.scenario({
@@ -25,7 +25,7 @@ formatter.step({
 });
 formatter.step({
   "line": 5,
-  "name": "user enters \"surajp\" as \"username\" and \"suraj@1995\" as \"password\" in \"login\" page",
+  "name": "user enters \"surajp\" as \"username\" and \"suraj1234\" as \"password\" in \"login\" page",
   "keyword": "Then "
 });
 formatter.step({
@@ -34,20 +34,21 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 7,
-  "name": "user validates \"title\" as \"CRMPRO  - CRM software for customer relationship management, sales, and support.\" in \"home\" page",
-  "keyword": "Then "
-});
-formatter.step({
+  "comments": [
+    {
+      "line": 7,
+      "value": "#Then user validates \"title\" as \"CRMPRO  - CRM software for customer relationship management, sales, and support.\" in \"home\" page"
+    }
+  ],
   "line": 8,
-  "name": "user validates \"userNameLabel\" as \"User: padmanabhuni suraj\" in \"home\" page",
+  "name": "user validates \"userNameLabel\" as \"  User: padmanabhuni suraj\" in \"home\" page",
   "keyword": "Then "
 });
 formatter.match({
   "location": "GeneralSteps.openUrl()"
 });
 formatter.result({
-  "duration": 3589947500,
+  "duration": 3982961800,
   "status": "passed"
 });
 formatter.match({
@@ -61,22 +62,22 @@ formatter.match({
       "offset": 25
     },
     {
-      "val": "suraj@1995",
+      "val": "suraj1234",
       "offset": 40
     },
     {
       "val": "password",
-      "offset": 56
+      "offset": 55
     },
     {
       "val": "login",
-      "offset": 70
+      "offset": 69
     }
   ],
   "location": "GeneralSteps.validateLogin(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 375362100,
+  "duration": 940737700,
   "status": "passed"
 });
 formatter.match({
@@ -93,30 +94,8 @@ formatter.match({
   "location": "GeneralSteps.clickMethod(String,String)"
 });
 formatter.result({
-  "duration": 5792413900,
+  "duration": 6218742800,
   "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "title",
-      "offset": 16
-    },
-    {
-      "val": "CRMPRO  - CRM software for customer relationship management, sales, and support.",
-      "offset": 27
-    },
-    {
-      "val": "home",
-      "offset": 113
-    }
-  ],
-  "location": "GeneralSteps.validateMethod(String,String,String)"
-});
-formatter.result({
-  "duration": 61786500,
-  "error_message": "java.lang.AssertionError: expected [CRMPRO  - CRM software for customer relationship management, sales, and support.] but found []\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\r\n\tat org.testng.Assert.assertEquals(Assert.java:116)\r\n\tat org.testng.Assert.assertEquals(Assert.java:190)\r\n\tat org.testng.Assert.assertEquals(Assert.java:200)\r\n\tat stepDefinitions.GeneralSteps.validateMethod(GeneralSteps.java:38)\r\n\tat ✽.Then user validates \"title\" as \"CRMPRO  - CRM software for customer relationship management, sales, and support.\" in \"home\" page(login.feature:7)\r\n",
-  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -125,25 +104,26 @@ formatter.match({
       "offset": 16
     },
     {
-      "val": "User: padmanabhuni suraj",
+      "val": "  User: padmanabhuni suraj",
       "offset": 35
     },
     {
       "val": "home",
-      "offset": 65
+      "offset": 67
     }
   ],
   "location": "GeneralSteps.validateMethod(String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 701787500,
+  "duration": 161485200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 688722500,
+  "duration": 95100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1171717700,
   "status": "passed"
 });
 });
